@@ -1,6 +1,4 @@
-# classificador_carros
-
-## Projeto de implementação de Modelo de Inteligência Artificial de classifiacção de carros em estacionamentos.
+# Projeto de implementação de Modelo de Inteligência Artificial de Classifiacção de Carros em Estacionamentos
 
 - Link para a pasta do Google Drive pública com os arquivos do projeto:
   
@@ -124,15 +122,24 @@ Nesse ponto é gerada uma pasta com todas as imagens classificadas de todos os c
 ### 05_Gerador_Dataset
 
 Notebook que faz a geração do Dataset manipulando as imagens das pastas. Neste ponto não é feita mais manipulação de vídeo, somente de imagens já classificadas.
-A geração do dataset inicia com a consulta no banco de dados. A partir da consulta um dataset é gerado. O dataset é composto de três pastas: treino, teste e validação. As imagens são inseridas nas pastas de maneira aleatória para evitar.
+
+A geração do dataset inicia com a consulta no banco de dados. A partir da consulta um dataset é gerado. 
+
+O dataset é composto de três pastas: treino, teste e validação. As imagens são inseridas nas pastas de maneira aleatória para evitar.
+
 Com este notebook é possível gerar datasets com todos os modelos disponíveis ou com modelos específicos.
 
 ### 06_Treino_de_Modelo
 
 Finalmente no último notebook acontece o treinamento do modelo utilizando o dataset criado no notebook anterior.
+
 Aqui é realizado o download do dataset e do modelo pré-treinado da família do EfficientNet, realizado o setup de treinamento.
+
 São criados os ImageGenerators necessários.
-Camadas extras são adicionadas ao modelo base
+
+Camadas extras são adicionadas ao modelo base.
+
 Realizado o Treinamento.
+
 Pós treinamento são realizadas predições e análise dos resultados.
 
